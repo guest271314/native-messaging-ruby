@@ -28,7 +28,7 @@ def send_message(message)
   offset = 0
   while offset < total_len
     # Look for a comma near the 1MB mark
-    # We subtract 10 bytes to leave a safe buffer for added brackets
+    # We subtract 2 bytes to leave a safe buffer for added brackets
     search_limit = [offset + MAX_SIZE - 2, total_len - 1].min
     
     # Find the last comma before the 1MB limit
