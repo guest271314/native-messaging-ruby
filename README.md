@@ -10,7 +10,7 @@
 6. Open `nm_ruby.json` in a text editor, set `"path"` to absolute path of `nm_ruby.rb`, and `chrome-extension://<ID>/` using ID from 5 in `"allowed_origins"` array.
 7. Copy the `nm_ruby.json` file to Chrome or Chromium configuration folder, e.g., Chromium on \*nix `~/.config/chromium/NativeMessagingHosts`; Chrome dev channel on \*nix `~/.config/google-chrome-unstable/NativeMessagingHosts`.
 8. Make sure `nm_ruby.rb` is executable.
-9. To test click `service worker` link in panel of unpacked extension which is DevTools for `background.js` in MV3 `ServiceWorker`, observe echo'ed message from Zig Native Messaging host. To disconnect run `port.disconnect()`.
+9. To test click `service worker` link in panel of unpacked extension which is DevTools for `background.js` in MV3 `ServiceWorker`, observe echo'ed message from Ruby Native Messaging host. To disconnect run `port.disconnect()`.
 
 The Native Messaging host echoes back the message passed. 
 
